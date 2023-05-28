@@ -8,7 +8,7 @@ row.append(col);
 body.append(row);
 
 let proArr=[];
-let pro1=new Promise((resolve)=>{setTimeout(()=>{resolve(1)},2000)})
+let pro1=new Promise((resolve)=>{setTimeout(()=>{resolve(1)},1000)})
 let pro2=new Promise((resolve)=>{setTimeout(()=>{resolve(2)},3000)})
 let pro3=new Promise((resolve)=>{setTimeout(()=>{resolve(3)},4000)})
 
@@ -20,8 +20,34 @@ pro1.then((con)=>{
 	let body=document.getElementById("output");
 	let row=document.createElement("tr");
 	let col=document.createElement("td");
-	col.innerText="Loading..."
-	col.colSpan=2;
-	row.append(col);
+	col1.innerText=con
+	col2.innerText=con
+	row.append(col1);
+	row.append(col2);
 	body.append(row);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
 })
