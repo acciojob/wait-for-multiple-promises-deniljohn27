@@ -18,6 +18,7 @@ proArr.push(pro3);
 
 pro1.then((con)=>{
 	let body=document.getElementById("output");
+	body.innerText="";
 	let row=document.createElement("tr");
 	let col1=document.createElement("td");
 	let col2=document.createElement("td");
@@ -25,30 +26,27 @@ pro1.then((con)=>{
 	col2.innerText=con
 	row.append(col1);
 	row.append(col2);
-	body.append(row);
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-	
+	body.append(row);	
+});
+pro2.then((con)=>{
+	let body=document.getElementById("output");
+	let row=document.createElement("tr");
+	let col1=document.createElement("td");
+	let col2=document.createElement("td");
+	col1.innerText=con
+	col2.innerText=con
+	row.append(col1);
+	row.append(col2);
+	body.append(row);	
 })
+pro3.then((con)=>{
+	let body=document.getElementById("output");
+	let row=document.createElement("tr");
+	let col1=document.createElement("td");
+	let col2=document.createElement("td");
+	col1.innerText=con
+	col2.innerText=con
+	row.append(col1);
+	row.append(col2);
+	body.append(row);	
+});
