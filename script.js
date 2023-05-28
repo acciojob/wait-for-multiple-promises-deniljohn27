@@ -3,7 +3,7 @@ let body=document.getElementById("output");
 let row=document.createElement("tr");
 let col=document.createElement("td");
 col.innerText="Loading..."
-col.id="loading"
+row.id="loading"
 col.colSpan=2;
 row.append(col);
 body.append(row);
