@@ -19,7 +19,8 @@ proArr.push(pro3);
 pro1.then((con)=>{
 	let body=document.getElementById("output");
 	let row=document.createElement("tr");
-	let col=document.createElement("td");
+	let col1=document.createElement("td");
+	let col2=document.createElement("td");
 	col1.innerText=con
 	col2.innerText=con
 	row.append(col1);
