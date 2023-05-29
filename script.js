@@ -11,7 +11,7 @@ body.append(row);
 let proArr=[];
 let pro1=new Promise((resolve)=>{setTimeout(()=>{resolve(1)},1000)})
 let pro2=new Promise((resolve)=>{setTimeout(()=>{resolve(2)},3000)})
-let pro3=new Promise((resolve)=>{setTimeout(()=>{resolve(3)},2000)})
+let pro3=new Promise((resolve)=>{setTimeout(()=>{resolve(4)},2000)})
 
 proArr.push(pro1);
 proArr.push(pro2);
